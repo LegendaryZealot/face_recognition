@@ -7,7 +7,7 @@ def real_time_face_recognition():
     cp=cv.VideoCapture(0)
     success,frame=cp.read()
     while success:
-        cv.imshow("real_time_face_recognition",frame)
+        #cv.imshow("real_time_face_recognition",frame)
         face_locations = face_recognition.face_locations(frame)
         faceNum = len(face_locations)
         for i in range(0, faceNum):
